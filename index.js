@@ -2,12 +2,12 @@ for(var i=0 ; i<document.querySelectorAll(".drum").length ; i++){
 document.querySelectorAll(".drum")[i].addEventListener("click", sound);
 function sound(){
 var buttoninnerhtml= this.innerHTML;
-   makesound(buttoninnerhtml);
+   makesound(buttoninnerhtml);                                           //for button press
 }
 
 } 
-document.addEventListener("keypress", function(event){
-makesound(event.key);
+document.addEventListener("keypress", function(event){                        //for keyword press    
+makesound(event.key);                                                      //event.key is property which tells which key was pressed
 });
 
 function makesound(key){
