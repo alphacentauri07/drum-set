@@ -47,10 +47,12 @@ function makesound(key){
   }
 }
 function Animation(currentkey){
-var activebutton= document.querySelector("." + currentkey);              // current key will return w,a,... from both button and key word and dot to get access to class i.e w drum in html
-activebutton.classList.add("pressed");                                 // a new class is .presseed is created and modify in css 
+var activebutton= document.querySelector("." + currentkey);                   // current key will return w,a,... from both button and key word and dot to get access to class i.e w drum in html
+activebutton.classList.add("pressed")                                         // a new class is .presseed is created and modify in css 
+
 // now adding time out function for pressed class
+
 setTimeout(function(){
 activebutton.classList.remove("pressed");
-},100);                                                            //time in milisec
+},100);                                                                         //time in milisec
 }
