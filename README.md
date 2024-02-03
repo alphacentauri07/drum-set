@@ -1,1 +1,1 @@
-https://noob69v.github.io/drum-set/
+https://alphacentauri07.github.io/drum-set/
